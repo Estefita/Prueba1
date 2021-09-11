@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+input{
+    border: none;
+}
+
+.foto{
+    padding: 25px;
+    text-align: center;
+    background-image: url("foto.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+h3{
+    font-weight: 100;
+}
+
+div.box-1{
+    height: 100%;
+    
+}
+
+div.box{
+    text-align: center;
+    height: 100%;
+    border-left: grey;
+    border-left-width: 3px;
+    border-left-style: solid;    
+}
+
+.barrareserva {
+  padding: 30px;
+  height: 100px;
+  background: white;
+  border-radius: 40px 40px;
+}
+
+.menu {
+  color:rgba(216, 191, 216, 0.815);
+  font-family: Arial;
+}
+
+h3 {
+  font-family: Arial;
+  color: rgb(83, 81, 81);
+  font-weight: bold;
+}
+
+#boton {
+  background-color: rgba(204, 136, 9, 0.863);
+  border-radius: 40px 40px;
+  color: white;
+  font-weight: bold; 
+  padding: 10px;
+}
+
+ul li {
+  list-style: none;
+  display: inline;
+  padding: 0 30px 5px 4px;
+  color:rgba(216, 191, 216, 0.815);
+  font: bold 90% monospace;
+}
+
+ul li.box {
+  border-left: grey;
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
+
+ ul{
+  background-color: white;
+  border-radius: 20px 20px;
+  border-style: solid;
+  width: 500px;
+  height: 80px;
+  padding: 35px;
+  display: none; 
+}
+
+.menu:hover .submenu {
+  display: block;
+}
+
+.simb {
+  color: chocolate;
+  border: none;
+  background-color: white;
+}
+
+.num {
+  width: 15px;
+  text-align: center;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+
+/* calendar */
+

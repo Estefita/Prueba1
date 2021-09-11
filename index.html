@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Título</title>
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />
+  <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/jquery-ui.structure.css" type="text/css" />
+  <link rel="stylesheet" href="css/jquery-ui.theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/jquery.datetimepicker.css" type="text/css" />
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+  <div class="row foto">
+    <form class="row barrareserva" action="prueba.html" method="POST">
+      <div class="col-3 box-1">
+        <label for="startDate" class="menu">Entrada</label>
+        <input type="text" id="from" name="from" />
+        <h3><span id="date_display"></span></h3>
+      </div>
+      <div class="col-3 box">
+        <label for="endDate" class="menu">Salida </label>
+        <input type="text" id="to" name="to" />
+        <h3><span id="end_date_display"></span></h3>
+      </div>
+      <div class="box col-3">
+        <div class="menu">
+          Ocupación
+          <ul class="submenu" id="list">
+            <li style="padding-right: 11px;">
+              Adultos<button class="simb adult menos" type="button" id="menos" onclick="contadormenos('cantidad1')">-</button>
+              <input id="cantidad1" type="text" style="width: 15px;" value="0">
+              <button class="simb adult mas" type="button" id="mas" onclick="contadormas('cantidad1')">+</button>
+
+            <li class="box" style="padding-right: 24px;">
+              Niños<button class="simb children menos" type="button" id="menos" onclick="contadormenos('cantidad2')">-</button>
+              <input id="cantidad2" type="text" style="width: 15px;" value="0">
+              <button class="simb children mas" type="button" id="mas" onclick="contadormas('cantidad2')">+</button>
+            </li>
+
+            <li class="box">
+              Bebés<button class="simb baby menos" type="button" id="menos" onclick="contadormenos('cantidad3')">-</button>
+              <input id="cantidad3" type="text" style="width: 15px;" value="0">
+              <button class="simb baby mas" type="button" id="mas" onclick="contadormas('cantidad3')">+</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="box col-3">
+        <label class="menu">PROMOCODE</label>
+        <input type="submit" id="boton" onclick="enviar()" value="RESERVAR" />
+    </div>
+    </form>
+  </div>
+   <script type="text/javascript" src="javascript.js"></script> 
+</body>
+</html>
